@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #212529;
+  --border-color: #666666;
+  --font-color: #f1f5f9;
+  --primary-color: #4dff91;
+  --error-color: #ff0043;
+  --winner: #0a7b0e8e;
+}
+
+body {
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+}
+header,
+h2 {
+  color: var(--font-color);
+  display: flex;
+}
+#jogadores {
+  color: var(--font-color);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#jogadores label,
+input {
+  font-size: 20px;
+}
+#play1 {
+  padding: 20px;
+}
+
+#jogadores button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+
+  justify-content: center;
+}
+
+#corpoTabuleiro {
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  gap: 0.7rem;
+  background-color: var(--bg-color);
+  margin-bottom: 1.5rem;
+  max-width: 25rem;
+}
+span {
+  background-color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  font-size: 7rem;
+  color: red;
+}
+/*    */
+.win {
+  background-color: var(--winner);
+  color: #f1f5f9;
+  display: flex;
+}
+
+#turnPlayer {
+  display: flex;
+  font-size: 25px;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+#empate {
+  font-size: 30px;
+  color: var(--error-color);
+}
+
+#winner {
+  font-size: 25px;
+  color: var(--winner);
+  background-color: #f1f5f9;
+  display: flex;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

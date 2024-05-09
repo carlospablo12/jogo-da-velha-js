@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jogo da Velha Times - js</h1>
+    </header>
+    <hr />
+    <main>
+      <div id="jogadores">
+        <section id="play1">
+          <label for="player1">X</label>
+          <input
+            type="text"
+            name="player1"
+            id="player1"
+            placeholder="Jogador 1"
+          />
+        </section>
+        <section id="play2">
+          <label for="player2">O</label>
+          <input
+            type="text"
+            name="player2"
+            id="player2"
+            placeholder="Jogador 2"
+          />
+        </section>
+        <br />
+        <button id="start">Começar</button>
+      </div>
+      <section id="corpoTabuleiro">
+        <span class="cursor-pointer" data-region="0.0"></span>
+        <span class="cursor-pointer" data-region="0.1"></span>
+        <span class="cursor-pointer" data-region="0.2"></span>
+        <span class="cursor-pointer" data-region="1.0"></span>
+        <span class="cursor-pointer" data-region="1.1"></span>
+        <span class="cursor-pointer" data-region="1.2"></span>
+        <span class="cursor-pointer" data-region="2.0"></span>
+        <span class="cursor-pointer" data-region="2.1"></span>
+        <span class="cursor-pointer" data-region="2.2"></span>
+      </section>
+      <h2>Vez de: <span id="turnPlayer"> </span></h2>
+    </main>
+  </body>
+</html>
